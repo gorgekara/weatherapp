@@ -1,0 +1,202 @@
+/*
+*	Weather App Style
+*	@author: Gjorge Karakabakov
+*/
+
+body {
+	font-family: "Open Sans", Helvetica, Arial;
+	font-size: 12px;
+}
+
+.container {
+	
+}
+
+#main {
+	width: 290px;
+	float: right;
+	margin: 20px 10px 0 0;
+	z-index: 1;
+	display: block;
+	position: relative;
+
+	background: #FFFFFF;
+	border: 1px solid #CCCCCC;
+	border-bottom: 3px solid #777;
+	padding: 10px 20px;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	box-shadow: 1px 1px 2px 0 #777;
+	-webkit-box-shadow: 1px 1px 2px 0 #777;
+	-moz-box-shadow: 1px 1px 2px 0 #777;
+}
+
+	#main #location {
+		font-size: 30px;
+		font-weight: 300;
+		color: #9E9E9E;
+		padding: 10px 20px;
+		margin: -10px -20px;
+	}
+
+	#main #icon {
+		margin: 0;
+		font-size: 120px;
+		color: #545454;
+	}
+
+	#main .degrees {
+		font-size: 88px;
+		font-weight: 300;
+		vertical-align: 20px;
+	}
+
+	#main #show-map,
+	#main #hide-map {
+		padding: 5px 10px;
+		margin: 0;
+		display: block;
+		color: #545454;
+		cursor: pointer;
+		cursor: hand;
+		transition: all 0.5s;
+		-webkit-transition: all 0.5s;
+		-moz-transition: all 0.5s;
+	}
+
+	#main #show-map:hover,
+	#main #hide-map:hover {
+		background: #F1F1F1;
+	}
+
+	#map {
+		margin: 0 -20px -10px -20px;
+	}
+
+		#main #map #location-map {
+			width: 100%;
+			height: 200px;
+			border: none;
+			border-top: 1px solid #DDDDDD;
+		}
+
+#searchForm {
+	
+}
+
+	#city {
+		top: 20px !important;
+		border: none;
+		padding: 11px 10px;
+		margin: 0;
+		width: 40%;
+		display: inline-block;
+		font-family: "Open sans", Helvetica, Arial;
+		font-size: 18px;
+		font-weight: 300;
+		border: 1px solid #CCCCCC;
+		border-bottom: 2px solid #BEBEBE;
+		border-radius: 3px;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		box-shadow: 1px 1px 2px 0 #d0d0d0;
+		-webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
+		-moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
+	}
+
+	#searchForm input[type="submit"] {
+		position: absolute;
+		left: 45%;
+		top: 20px;
+		z-index: 1;
+		cursor: pointer;
+		width: 100px;
+		display: inline-block;
+		font-size: 14px;
+		padding: 15px 14px;
+		height: 49px;
+		background: #F1F1F1;
+		color: #545454;
+		line-height: 19px;
+		margin: 0 0 0 3px;
+		border: 1px solid #CCCCCC;
+		border-bottom: 2px solid #BEBEBE;
+		border-radius: 3px;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		box-shadow: 1px 1px 2px 0 #d0d0d0;
+		-webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
+		-moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
+	}
+
+.yellow {
+	color: rgb(255, 204, 0);
+}
+
+.blue {
+	color: rgb(0, 163, 255);
+}
+
+.gray {
+	color: gray;
+}
+
+html, body {
+	height: 100%;
+	margin: 0px;
+	padding: 0px
+}
+
+#map-canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+}
+
+.controls {
+	margin-top: 16px;
+	border: 1px solid transparent;
+	border-radius: 2px 0 0 2px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	height: 32px;
+	outline: none;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+#pac-input {
+	background-color: #fff;
+	padding: 0 11px 0 13px;
+	width: 400px;
+	font-family: Roboto;
+	font-size: 15px;
+	font-weight: 300;
+	text-overflow: ellipsis;
+}
+
+#pac-input:focus {
+	border-color: #4d90fe;
+	margin-left: -1px;
+	padding-left: 14px;  /* Regular padding-left + 1. */
+	width: 401px;
+}
+
+.pac-container {
+	font-family: Roboto;
+}
+
+#type-selector {
+	color: #fff;
+	background-color: #4d90fe;
+	padding: 5px 11px 0px 11px;
+}
+
+#type-selector label {
+	font-family: Roboto;
+	font-size: 13px;
+	font-weight: 300;
+}

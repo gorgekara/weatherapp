@@ -1,0 +1,28 @@
+<html>
+<head>
+	<title>Weather App 0.1</title>
+	<link rel="stylesheet" type="text/css" href="css/font.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700' rel='stylesheet' type='text/css' />
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places"></script>
+</head>
+<body>
+	<div class="container">
+		<form id="searchForm">
+			<input type="text" id="city" placeholder="Search city.." autocomplete="off"/>
+			<input type="submit" value="Search" />
+		</form>
+
+		<div id="main">
+			<div id="location"></div>
+			<div id="descriptive"></div>
+			<div id="icon"></div>
+			<div id="map"></div>
+		</div>
+	</div>
+
+    <div id="map-canvas"></div>
+    
+	<script type="text/javascript" src="js/dependencies/require.js" data-main="js/main"></script>
+</body>
+</html>
